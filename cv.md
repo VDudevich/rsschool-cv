@@ -9,6 +9,7 @@
  * Javascript;
  * HTML, CSS;
  * SQL;
+ * Markdown
 
 ## Experience:
 * **Company XXX:**
