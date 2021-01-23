@@ -15,6 +15,8 @@
   * Worked as good guy on the application allowing other people get some fun.
 * **Company YYY:**
   * I have got NDA, so cannot provide you any information
+* **Company ZZZ:**
+  * I don't really remember
 
 ## Education:
   * Vitebsk State University, Applied Mathematic (2002).
