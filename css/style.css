@@ -1,7 +1,11 @@
 .wrapper {
-  width: 1200px;
+  width: 60rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.mydata {
+  display: flex;
 }
 
 .avatar {
@@ -10,6 +14,10 @@
 
 .mycontact {
   font-size: large;
+}
+
+.mycontact {
+  margin-left: 10rem;
 }
 
 .myinfo {
@@ -26,4 +34,9 @@
 
 .myeducation {
   font-size: large;
+}
+
+.englishlevel {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
