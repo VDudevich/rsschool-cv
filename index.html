@@ -8,63 +8,107 @@
   </head>
   <body>
     <div class="wrapper">
-      <div>
-        <img
-          src="https://www.zoopicture.ru/assets/2011/02/IMG_6026.jpg"
-          alt="My pic"
-          class="avatar"
-        />
-      </div>
-      <div class="mycontact">
-        <h1>Vladimir Dudevich</h1>
-        <strong>Phone:</strong>
-        +123(45)777 77 77 <br />
-        <strong>Email:</strong>
-        ihavenotsharedit@gmail.com
-      </div>
-      <div class="myinfo">
-        <h1>About me</h1>
-        This section should have some text about me.
-      </div>
-      <div class="myskills">
-        <h1>Skills</h1>
-        <ul>
-          <li>Javascript</li>
-          <li>HTML, CSS</li>
-          <li>SQL</li>
-          <li>Markdown</li>
-        </ul>
-      </div>
-      <div class="myexperience">
-        <h1>Experience</h1>
-        <ul>
-          <li>
-            Company XXX
+      <header class="mydata">
+        <div>
+          <img
+            src="https://www.zoopicture.ru/assets/2011/02/IMG_6026.jpg"
+            alt="My pic"
+            class="avatar"
+          />
+        </div>
+        <div class="mycontact">
+          <h1>Vladimir Dudevich</h1>
+          <ul>
+            <li><strong>Phone:</strong> +123(45)777 77 77 <br /></li>
+            <li><strong>Email:</strong> ihavenotsharedit@gmail.com</li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <section class="maininfo">
+          <article>
+            <div class="myinfo">
+              <h2>About me</h2>
+              This section should have some text about me.
+            </div>
+          </article>
+          <div class="myskills">
+            <h2>Skills</h2>
+            <ul>
+              <li>Javascript</li>
+              <li>HTML, CSS</li>
+              <li>SQL</li>
+              <li>Markdown</li>
+            </ul>
+          </div>
+          <div class="mycode">
+            <h2>Code example</h2>
+            <a href="https://www.codewars.com/kata/54b724efac3d5402db00065e"
+              >Decode the Morse code</a
+            >
+            <pre>
+            <code>
+              // Decode the Morse code
+              decodeMorse = function(morseCode){
+                morseCode = morseCode.trim();
+                let morseCodeArray = morseCode.split('   ');
+                let result = '';
+                for (let i = 0; i < morseCodeArray.length; i++) {
+                  morseCodeArray[i] = morseCodeArray[i].split(' ');
+                  let word = '';
+                  for (let j = 0; j < morseCodeArray[i].length; j++) {
+                    word += MORSE_CODE[morseCodeArray[i][j]];
+                  }
+                  if (result === '') {
+                    result += word;
+                  } else {
+                      result += ' ' + word;
+                    } 
+                }
+                return result;
+              }
+            </code>
+          </pre>
+          </div>
+        </section>
+        <section class="experience">
+          <div class="myexperience">
+            <h2>Experience</h2>
             <ul>
               <li>
-                Worked as good guy on the application allowing other people get
-                some fun.
+                Company XXX
+                <ul>
+                  <li>
+                    Worked as good guy on the application allowing other people
+                    get some fun.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Company YYY
+                <ul>
+                  <li>I have got NDA, so cannot provide you any information</li>
+                </ul>
+              </li>
+              <li>
+                Company ZZZ
+                <ul>
+                  <li>I don't really remember</li>
+                </ul>
               </li>
             </ul>
-          </li>
-          <li>
-            Company YYY
-            <ul>
-              <li>I have got NDA, so cannot provide you any information</li>
-            </ul>
-          </li>
-          <li>
-            Company ZZZ
-            <ul>
-              <li>I don't really remember</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="myeducation">
-        <h1>Education</h1>
-        Vitebsk State University, Applied Mathematic (2002).
-      </div>
+          </div>
+        </section>
+        <foiter class="education">
+          <div class="myeducation">
+            <h2>Education</h2>
+            Vitebsk State University, Applied Mathematic (2002).
+          </div>
+          <div class="englishlevel">
+            <strong>English:</strong> Upper intermediate
+          </div>
+        </foiter>
+      </main>
     </div>
   </body>
 </html>
