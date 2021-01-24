@@ -26,12 +26,10 @@
       </header>
       <main>
         <section class="maininfo">
-          <article>
-            <div class="myinfo">
-              <h2>About me</h2>
-              This section should have some text about me.
-            </div>
-          </article>
+          <div class="myinfo">
+            <h2>About me</h2>
+            <article>This section should have some text about me.</article>
+          </div>
           <div class="myskills">
             <h2>Skills</h2>
             <ul>
@@ -53,10 +51,10 @@
                 morseCode = morseCode.trim();
                 let morseCodeArray = morseCode.split('   ');
                 let result = '';
-                for (let i = 0; i < morseCodeArray.length; i++) {
+                for (let i = 0; i &lt; morseCodeArray.length; i++) {
                   morseCodeArray[i] = morseCodeArray[i].split(' ');
                   let word = '';
-                  for (let j = 0; j < morseCodeArray[i].length; j++) {
+                  for (let j = 0; j &lt; morseCodeArray[i].length; j++) {
                     word += MORSE_CODE[morseCodeArray[i][j]];
                   }
                   if (result === '') {
@@ -99,16 +97,16 @@
             </ul>
           </div>
         </section>
-        <foiter class="education">
-          <div class="myeducation">
-            <h2>Education</h2>
-            Vitebsk State University, Applied Mathematic (2002).
-          </div>
-          <div class="englishlevel">
-            <strong>English:</strong> Upper intermediate
-          </div>
-        </foiter>
       </main>
+      <footer class="education">
+        <div class="myeducation">
+          <h2>Education</h2>
+          Vitebsk State University, Applied Mathematic (2002).
+        </div>
+        <div class="englishlevel">
+          <strong>English:</strong> Upper intermediate
+        </div>
+      </footer>
     </div>
   </body>
 </html>
